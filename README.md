@@ -1,4 +1,4 @@
-# Cakrayuda_Computer-graphic
+# Cakrayuda Computer-graphic Game
 Cakrayuda is a computer graphic based game. This repository was made for the Computer Graphic course's final assignment. 
 
 **Group 8**
