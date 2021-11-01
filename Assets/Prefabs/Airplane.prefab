@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2612157339748191081}
   - component: {fileID: 2612157339748191080}
   - component: {fileID: 1421927388694402452}
+  - component: {fileID: 1167643217}
   m_Layer: 0
   m_Name: Airplane
   m_TagString: Untagged
@@ -150,6 +151,24 @@ MonoBehaviour:
   player_Bullet: {fileID: 3053335011951039111, guid: 4348963945381084991db9ea15d1733e,
     type: 3}
   attack_Point: {fileID: 6094042651718449261}
+  attack_Timer: 0.35
+--- !u!114 &1167643217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612157339748191063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9cf9cacef544d4fa264b3846e4087e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  life: 3
 --- !u!1 &4015337796895249401
 GameObject:
   m_ObjectHideFlags: 0
