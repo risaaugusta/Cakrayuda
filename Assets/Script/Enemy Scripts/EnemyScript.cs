@@ -50,7 +50,9 @@ public class EnemyScript : MonoBehaviour
             Invoke("TurnOffGameObject",0f);
 
             //play explosion
-            anim.SetBool("Destroy",true);
+            anim.Play("Destroy");
+
+            ScoreManager.instance.AddPoint();
         }
     }
 }

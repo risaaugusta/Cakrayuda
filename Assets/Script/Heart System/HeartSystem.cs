@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class HeartSystem : MonoBehaviour
 {
+    public HeartSystem instance;
+    
     public GameObject[] hearts;
     public int life;
     private bool dead;
+
+    public GameOverScript GameOverScript;
+
 
     void Start(){
         life = hearts.Length;
     }
 
-    void Update()
-    {
-        /*if(life<1){
-            Destroy(hearts[0].gameObject);
-        }else if(life<2){
-            Destroy(hearts[1].gameObject);
-        }else if(life<3){
-            Destroy(hearts[2].gameObject);
-        }*/
+    void Update(){
         if(dead == true){
             Debug.Log("dead");
             Invoke("TurnOffGameObject",0f);
+            GameOverScript.Setup();  
         }
     }
 

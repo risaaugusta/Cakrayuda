@@ -19,10 +19,14 @@ public class PlayerController : MonoBehaviour
     private float current_Attack_Timer;
     private bool canAttack;
 
+    // public GameObject[] hearts;
+    // public int life;
+
     // Start is called before the first frame update
     void Start()
     {
         current_Attack_Timer = attack_Timer;
+        //life = hearts.Length;
     }
 
     // Update is called once per frame

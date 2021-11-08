@@ -169,6 +169,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   life: 3
+  GameOverScript: {fileID: 0}
 --- !u!1 &4015337796895249401
 GameObject:
   m_ObjectHideFlags: 0
