@@ -19,14 +19,12 @@ public class PlayerController : MonoBehaviour
     private float current_Attack_Timer;
     private bool canAttack;
 
-    // public GameObject[] hearts;
-    // public int life;
+    //public AudioSource playSound;
 
     // Start is called before the first frame update
     void Start()
     {
         current_Attack_Timer = attack_Timer;
-        //life = hearts.Length;
     }
 
     // Update is called once per frame
@@ -74,7 +72,9 @@ public class PlayerController : MonoBehaviour
 
                 Instantiate(player_Bullet, attack_Point.position, Quaternion.identity);
 
-                //play the sound effects
+                FindObjectOfType<AudioManager>().Play("GunSound");
+
+                //playSound.Play();
             }
         }
     }

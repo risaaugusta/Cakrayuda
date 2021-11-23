@@ -146,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   bound_X: -11
+  playSound: {fileID: 0}
 --- !u!95 &4545710804835225361
 Animator:
   serializedVersion: 3

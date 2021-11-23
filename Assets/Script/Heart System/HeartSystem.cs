@@ -27,6 +27,7 @@ public class HeartSystem : MonoBehaviour
 
     public void TakeDamage(){
         life -= 1;
+        FindObjectOfType<AudioManager>().Play("PlayerHit");
         Destroy(hearts[life].gameObject);
         if(life < 1){
             dead = true;
@@ -40,6 +41,12 @@ public class HeartSystem : MonoBehaviour
     void OnTriggerEnter2D(Collider2D target){
         if(target.tag == "Enemy"){
             Debug.Log("I'm Hit");
+            TakeDamage();
+        }else if(target.tag == "Land"){
+            Debug.Log("Hit by Land");
+            TakeDamage();
+        }else if(target.tag == "EnemyBullet"){
+            Debug.Log("Hit by Bullet");
             TakeDamage();
         }
     }
